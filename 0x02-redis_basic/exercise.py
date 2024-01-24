@@ -22,4 +22,5 @@ class Cache:
         """ Stores data to redis """
         key_data = str(uuid.uuid4())
         self._redis.set(key_data, data)
+        
         return key_data
